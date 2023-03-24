@@ -49,8 +49,8 @@ export default {
 
 <style lang="scss" scoped>
 .featured-wrapper {
-    background-color: blue;
-    height: 300px;
+    background-color: #0282f9;
+    height: 250px;
     color: white;
     display: flex;
     align-items: center;
@@ -58,9 +58,23 @@ export default {
 
     ul {
         display: flex;
-        gap: 20px;
+        gap: 60px;
         justify-content: space-around;
         color: white;
+
+        li {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            .img-wrapper {
+                width: 60px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
 
     }
 }

@@ -26,6 +26,7 @@ export default {
   <AppHeader></AppHeader>
   <AppMain></AppMain>
   <AppFeatured></AppFeatured>
+  <AppFooter></AppFooter>
 </template>
 
 <style lang="scss">

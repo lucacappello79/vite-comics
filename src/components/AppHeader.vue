@@ -34,7 +34,6 @@ export default {
 
 <style lang="scss" scoped>
 .header-wrapper {
-    border: 1px solid black;
 
     display: flex;
     justify-content: space-between;
@@ -42,7 +41,6 @@ export default {
     padding: 30px 0;
 
     ul {
-        background-color: aquamarine;
 
         display: flex;
         gap: 30px;
