@@ -30,6 +30,11 @@ export default {
 </template>
 
 <style lang="scss">
+.centered {
+  max-width: 1000px;
+  margin: auto;
+}
+
 ul {
   list-style-type: none;
 }

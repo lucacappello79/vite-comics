@@ -11,8 +11,7 @@ export default {
 
 <template>
     <header>
-        <div class="header-wrapper">
-
+        <div class="header-wrapper centered">
             <div class="logo">
                 <img src="/img/dc-logo.png" alt="">
             </div>
@@ -23,16 +22,16 @@ export default {
                     </li>
                 </ul>
             </div>
-
-
         </div>
-
-
-
     </header>
 </template>
 
 <style lang="scss" scoped>
+.centered {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .header-wrapper {
 
     display: flex;
@@ -47,6 +46,7 @@ export default {
         align-items: center;
 
         height: 100%;
+        font-size: 0.8em;
         font-weight: bold;
     }
 

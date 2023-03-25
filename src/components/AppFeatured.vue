@@ -32,29 +32,42 @@ export default {
 </script>
 
 <template>
-    <div class="featured-wrapper">
-        <ul>
-            <li v-for="(item, index) in featuredLinks ">
-                <div class="img-wrapper">
-                    <img :src="item.img" alt="">
-                </div>
-                <span>
-                    {{ item.text }}
-                </span>
-            </li>
-        </ul>
+    <section>
 
-    </div>
+        <div class="featured-wrapper centered">
+            <ul>
+                <li v-for="(item, index) in featuredLinks ">
+                    <div class="img-wrapper">
+                        <img :src="item.img" alt="">
+                    </div>
+                    <span>
+                        {{ item.text }}
+                    </span>
+                </li>
+            </ul>
+
+        </div>
+
+    </section>
 </template>
 
 <style lang="scss" scoped>
-.featured-wrapper {
+.centered {
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
     background-color: #0282f9;
+}
+
+.featured-wrapper {
     height: 250px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 20px;
 
     ul {
         display: flex;
