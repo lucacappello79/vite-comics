@@ -9,11 +9,11 @@ export default {
 </script>
 
 <template>
-    <main>
-        <div class="content centered">
+    <section class="social">
+        <div class="social-wrapper centered">
             --- Content Goes Here ---
         </div>
-    </main>
+    </section>
 </template>
 
 <style scoped>
@@ -22,18 +22,12 @@ export default {
     margin: auto;
 }
 
-main {
-    background-color: black;
+.social {
+    background-color: #303030;
 }
 
-.content {
-    color: white;
+.social-wrapper {
     font-weight: bold;
-    font-size: 1.5em;
-    height: 150px;
-
-    line-height: 150px;
-    text-align: center;
-
+    height: 100px;
 }
 </style>

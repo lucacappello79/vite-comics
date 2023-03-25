@@ -3,6 +3,7 @@ import AppHeader from "./components/AppHeader.vue"
 import AppMain from "./components/AppMain.vue"
 import AppFooter from "./components/AppFooter.vue"
 import AppFeatured from "./components/AppFeatured.vue"
+import AppSocial from "./components/AppSocial.vue"
 
 
 export default {
@@ -17,6 +18,7 @@ export default {
     AppMain,
     AppFooter,
     AppFeatured,
+    AppSocial,
   },
 
 };
@@ -27,14 +29,10 @@ export default {
   <AppMain></AppMain>
   <AppFeatured></AppFeatured>
   <AppFooter></AppFooter>
+  <AppSocial></AppSocial>
 </template>
 
 <style lang="scss">
-.centered {
-  max-width: 1000px;
-  margin: auto;
-}
-
 ul {
   list-style-type: none;
 }

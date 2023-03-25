@@ -62,7 +62,7 @@ section {
 }
 
 .featured-wrapper {
-    height: 250px;
+    height: 150px;
     color: white;
     display: flex;
     align-items: center;

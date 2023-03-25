@@ -117,13 +117,13 @@ footer {
     align-items: center;
     justify-content: center;
 
-    height: 450px;
+    height: 400px;
     overflow: hidden;
 
     img {
 
         width: 100%;
-        height: 130%;
+        height: 110%;
         object-fit: cover;
         // object-position: center;
     }
