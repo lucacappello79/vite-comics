@@ -11,12 +11,26 @@ export default {
 <template>
     <section class="social">
         <div class="social-wrapper centered">
-            --- Content Goes Here ---
+            <div class="social-left">
+                <button>SIGN-UP NOW!</button>
+            </div>
+            <div class="social-right">
+                <span>FOLLOW US</span>
+                <div class="logo-wrapper">
+                    <img src="/img/footer-facebook.png" alt="">
+                    <img src="/img/footer-twitter.png" alt="">
+                    <img src="/img/footer-youtube.png" alt="">
+                    <img src="/img/footer-pinterest.png" alt="">
+                    <img src="/img/footer-periscope.png" alt="">
+                </div>
+
+            </div>
+
         </div>
     </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .centered {
     max-width: 1200px;
     margin: auto;
@@ -27,7 +41,39 @@ export default {
 }
 
 .social-wrapper {
+    display: flex;
+    justify-content: space-between;
     font-weight: bold;
-    height: 100px;
+    height: 80px;
+
+    .social-left {
+        display: flex;
+        align-items: center;
+    }
+
+    button {
+        background-color: #303030;
+        font-weight: bold;
+        color: white;
+        padding: 10px;
+        border: 2px solid #0282f9;
+    }
+
+    .social-right {
+        display: flex;
+        align-items: center;
+    }
+
+    span {
+        font-size: 1.1em;
+        color: #0282f9;
+        margin-right: 25px;
+    }
+
+    .logo-wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
 }
 </style>
