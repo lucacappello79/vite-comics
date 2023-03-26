@@ -52,13 +52,15 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../scss/variables" as *;
+
 .centered {
     max-width: 1200px;
     margin: auto;
 }
 
 section {
-    background-color: #0282f9;
+    background-color: $main-color;
 }
 
 .featured-wrapper {

@@ -1,0 +1,6 @@
+$main-color: #0282f9;
+
+@mixin centered() {
+    max-width: 1200px;
+    margin: auto;
+}

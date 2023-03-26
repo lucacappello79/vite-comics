@@ -10,7 +10,7 @@ export default {
 
 <template>
     <section class="social">
-        <div class="social-wrapper centered">
+        <div class="social-wrapper">
             <div class="social-left">
                 <button>SIGN-UP NOW!</button>
             </div>
@@ -31,16 +31,21 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.centered {
-    max-width: 1200px;
-    margin: auto;
-}
+@use "../scss/variables" as *;
+
+// .centered {
+//     max-width: 1200px;
+//     margin: auto;
+// }
 
 .social {
     background-color: #303030;
 }
 
 .social-wrapper {
+
+    @include centered();
+
     display: flex;
     justify-content: space-between;
     font-weight: bold;
@@ -56,7 +61,7 @@ export default {
         font-weight: bold;
         color: white;
         padding: 10px;
-        border: 2px solid #0282f9;
+        border: 2px solid $main-color;
     }
 
     .social-right {
@@ -66,7 +71,7 @@ export default {
 
     span {
         font-size: 1.1em;
-        color: #0282f9;
+        color: $main-color;
         margin-right: 25px;
     }
 
