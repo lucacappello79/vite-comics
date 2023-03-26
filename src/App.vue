@@ -41,7 +41,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: blue;
+    color: #0282f9;
   }
 }
 </style>

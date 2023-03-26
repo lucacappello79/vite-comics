@@ -48,7 +48,47 @@ export default {
         height: 100%;
         font-size: 0.8em;
         font-weight: bold;
+
+        li {
+            position: relative;
+
+            a {
+                color: #575757;
+
+                &:hover {
+                    color: #0282f9;
+                }
+            }
+        }
+
+        li:hover::before {
+
+            width: 100%;
+            height: 3px;
+            background-color: #0282f9;
+
+            content: "";
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        //.active {
+        //     position: absolute;
+        //     bottom: -50px;
+        //     left: 0;
+        //     display: none;
+        //     height: 3px;
+        //     width: 100%;
+        //     background-color: #0282f9;
+
+        // }
+
+
     }
+
+
 
 }
 </style>

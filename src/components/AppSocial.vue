@@ -44,7 +44,7 @@ export default {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    height: 80px;
+    height: 100px;
 
     .social-left {
         display: flex;

@@ -71,17 +71,18 @@ section {
 
     ul {
         display: flex;
-        gap: 60px;
+        gap: 45px;
+        // gap: 60px;
         justify-content: space-around;
         color: white;
 
         li {
             display: flex;
-            gap: 20px;
+            gap: 15px;
             align-items: center;
 
             .img-wrapper {
-                width: 60px;
+                width: 40px;
 
                 img {
                     width: 100%;
