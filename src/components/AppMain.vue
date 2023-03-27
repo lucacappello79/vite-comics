@@ -282,8 +282,9 @@ main {
 
     .main-jumbo {
         color: white;
-        background-image: url(/img/jumbotron.jpg);
+        background-image: url(/img/wallpaper.jpg);
         background-size: cover;
+        background-position-y: 35%;
         height: 300px;
         margin-bottom: 60px;
     }
