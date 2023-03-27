@@ -115,38 +115,79 @@ export default {
 
 <template>
     <main>
+        <div class="main-jumbo"></div>
         <div class="content centered">
+            <div class="current-series">Current Series</div>
             <AppComics v-for="(item, index) in comics" :img="item.thumb" :title="item.series"></AppComics>
             <!-- --- Content Goes Here --- -->
         </div>
+        <div class="load-more">Load More</div>
     </main>
 </template>
 
-<style scoped>
-.centered {
-    max-width: 1200px;
-    margin: auto;
-}
+<style  lang="scss" scoped>
+@use "../scss/variables" as *;
 
 main {
     background-color: black;
-}
+    padding-bottom: 30px;
 
-.content {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    .main-jumbo {
+        color: white;
+        background-image: url(/img/jumbotron.jpg);
+        background-size: cover;
+        height: 300px;
+        margin-bottom: 40px;
+    }
 
-    margin: 0 auto;
-    width: 1200px;
+    .content {
 
-    /* color: white;
-    font-weight: bold;
-    font-size: 1.5em;
-    height: 150px;
+        @include centered();
 
-    line-height: 150px;
-    text-align: center; */
 
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        margin: 0 auto;
+        width: 1200px;
+
+        /* color: white;
+        font-weight: bold;
+        font-size: 1.5em;
+        height: 150px;
+    
+        line-height: 150px;
+        text-align: center; */
+
+        .current-series {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            transform: translate(-50%, -150%);
+
+            background-color: $main-color;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 8px 16px;
+        }
+
+    }
+
+    .load-more {
+        text-align: center;
+        width: 180px;
+        margin: 20px auto;
+
+        background-color: $main-color;
+        color: white;
+        font-size: 0.8em;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 8px;
+    }
 }
 </style>

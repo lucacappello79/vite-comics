@@ -11,7 +11,7 @@ export default {
 
 <template>
     <header>
-        <div class="header-wrapper centered">
+        <div class="header-wrapper">
             <div class="logo">
                 <img src="/img/dc-logo.png" alt="">
             </div>
@@ -27,12 +27,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.centered {
-    max-width: 1200px;
-    margin: auto;
-}
+@use "../scss/variables" as *;
 
 .header-wrapper {
+
+    @include centered();
 
     display: flex;
     justify-content: space-between;

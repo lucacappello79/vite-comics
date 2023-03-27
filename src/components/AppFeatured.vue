@@ -34,7 +34,7 @@ export default {
 <template>
     <section>
 
-        <div class="featured-wrapper centered">
+        <div class="featured-wrapper">
             <ul>
                 <li v-for="(item, index) in featuredLinks ">
                     <div class="img-wrapper">
@@ -54,16 +54,16 @@ export default {
 <style lang="scss" scoped>
 @use "../scss/variables" as *;
 
-.centered {
-    max-width: 1200px;
-    margin: auto;
-}
 
 section {
     background-color: $main-color;
 }
 
 .featured-wrapper {
+
+    @include centered();
+
+
     height: 150px;
     color: white;
     display: flex;

@@ -37,7 +37,7 @@ export default {
 
 <template>
     <footer>
-        <div class="footer-wrapper centered">
+        <div class="footer-wrapper">
             <div class="bottom-links">
                 <div class="col-left">
                     <ul v-for="(singleList, singleListIndex) in footerLinks.slice(0, 2)">
@@ -72,10 +72,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.centered {
-    max-width: 1200px;
-    margin: auto;
-}
+@use "../scss/variables" as *;
 
 footer {
     background-image: url(/img/footer-bg.jpg);
@@ -85,6 +82,8 @@ footer {
 }
 
 .footer-wrapper {
+
+    @include centered();
 
     font-size: 0.9em;
     display: flex;
