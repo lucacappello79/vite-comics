@@ -48,5 +48,9 @@ export default {
     .title {
         color: white;
     }
+
+    &:hover {
+        transform: scale(1.3);
+    }
 }
 </style>
