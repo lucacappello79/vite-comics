@@ -15,18 +15,21 @@ export default {
     props: {
         img: String,
         title: String,
+        link: String,
     }
 };
 
 </script>
 
 <template>
-    <div class="card">
-        <img :src="img" alt="">
-        <div class="title">
-            {{ title }}
+    <a :href="link" target="_blank">
+        <div class="card">
+            <img :src="img" alt="">
+            <div class="title">
+                {{ title }}
+            </div>
         </div>
-    </div>
+    </a>
 </template>
 
 <style lang="scss" scoped>
