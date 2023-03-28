@@ -84,14 +84,40 @@ section {
             align-items: center;
 
             .img-wrapper {
-                width: 40px;
+                width: 45px;
 
                 img {
                     width: 100%;
                 }
+
+                ;
             }
+
+            ;
+
+            &:nth-child(4) {
+                .img-wrapper {
+
+                    img {
+                        width: 80% // Your styles for the 4th img element go here
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+
+            ;
+
         }
 
+        ;
+
     }
+
+    ;
 }
+
+;
 </style>
